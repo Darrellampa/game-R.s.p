@@ -131,21 +131,33 @@ var scissor = "rsp3.png"
 //winner1 
 if (randomImage1 === rock && randomImage2 === scissor){
     document.querySelector("h1").innerHTML = "Rock Win!"
+    document.querySelector(".p1").innerHTML = "<mark>PLAYER 1 Win!</mark>"
+    document.querySelector(".p2").innerHTML = "<del>PLAYER 2 Lose!</del>"
 }
 else if (randomImage1 === scissor && randomImage2 === rock){
     document.querySelector("h1").innerHTML = "Rock Win!"
+    document.querySelector(".p1").innerHTML = "<del>PLAYER 1 Lose!</del>"
+    document.querySelector(".p2").innerHTML = "<mark>PLAYER 2 Win!</mark>"
 }
 else if (randomImage1 === paper && randomImage2 === scissor){
     document.querySelector("h1").innerHTML = "Scissor Win!"
+    document.querySelector(".p1").innerHTML = "<del>PLAYER 1 Lose!</del>"
+    document.querySelector(".p2").innerHTML = "<mark>PLAYER 2 win!</mark>"
 }
 else if (randomImage1 === scissor && randomImage2 === paper){
     document.querySelector("h1").innerHTML = "Scissor Win!"
+    document.querySelector(".p1").innerHTML = "<mark>PLAYER 1 Win!</mark>"
+    document.querySelector(".p2").innerHTML = "<del>PLAYER 2 Lose!</del>"
 }
 else if (randomImage1 === paper && randomImage2 === rock){
     document.querySelector("h1").innerHTML = "Paper Win!"
+    document.querySelector(".p1").innerHTML = "<mark>PLAYER 1 Win!</mark>"
+    document.querySelector(".p2").innerHTML = "<del>PLAYER 2 Lose!</del>"
 }
 else if (randomImage1 === rock && randomImage2 === paper){
     document.querySelector("h1").innerHTML = "Paper Win!"
+    document.querySelector(".p1").innerHTML = "<mark>PLAYER 1 Win!</mark>"
+    document.querySelector(".p2").innerHTML = "<del>PLAYER 2 Lose!</del>"
 }
 else{
     document.querySelector("h1").innerHTML = "draw"
